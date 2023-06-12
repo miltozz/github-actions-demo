@@ -2,11 +2,11 @@
 # To get a newer version, you will need to update the SHA.
 # You can also reference a tag or branch, but the action may change without warning.
 
-name: Publish Docker image - private repo
+name: Publish Docker image
 
 on:
   push:
-    branches: [ add-jest ]
+    branches: [ demo/v2 ]
 
 jobs:
   push_to_registry:

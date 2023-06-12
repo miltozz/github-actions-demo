@@ -2,7 +2,7 @@
 
 # Test Github Actions
 
-## Branch: add-jest
+## Branch: demo/v2
 - added jest in dev dependencies 
 - added an always-passing simple test for demo purposes
 - add some CI workflows to check Github Actions

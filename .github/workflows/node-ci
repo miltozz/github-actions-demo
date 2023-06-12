@@ -2,7 +2,7 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ main, add-jest ]
+    branches: [ main, demo/v2 ]
   pull_request:
     branches: [ main ]
 

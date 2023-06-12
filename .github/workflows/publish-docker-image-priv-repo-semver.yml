@@ -7,12 +7,12 @@ name: Publish Docker image - private repo
 on:
   push:
     branches:
-      - "add-jest"
+      - "demo/v2"
     tags:
       - 'v*'
   pull_request:
     branches:
-      - "add-jest"
+      - "demo/v2"
 
 jobs:
   docker:
