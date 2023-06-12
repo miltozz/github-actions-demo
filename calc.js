@@ -1,6 +1,17 @@
 const express = require("express");
-const app = express();
 const path = require("path");
+const app = express();
+
+
+// ## ES6 .mjs stuff
+// import express from "express";
+// import { join } from "path";
+// import { fileURLToPath } from 'url';
+// import { dirname } from 'path';
+
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = dirname(__filename);
+
 const port = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {

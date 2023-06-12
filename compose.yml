@@ -1,0 +1,5 @@
+services:
+  calc:
+    image: miltosdev/my-private-repo:test-ssh-remote
+    ports:
+      - 80:3000

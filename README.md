@@ -1,8 +1,32 @@
-![example workflow](https://github.com/thelongestyard/actions-play/actions/workflows/github-actions-demo.yml/badge.svg) 
-![example workflow](https://github.com/thelongestyard/actions-play/actions/workflows/node-ci.yml/badge.svg) 
 [![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
 
-# Test some Github Actions
-- This branch is a copy of the _main_ branch in [thelongestyard/calculator](https://github.com/thelongestyard/calculator)
-- We add a simple CI workflow in `.github/workflows/github-actions-demo.yml` to see Github Actions.. in action!
-- 🚀
+# Test Github Actions
+
+## Branch: test-ssh-remote
+- Add Github Actions CI workflow to check remote ssh actions
+- Assumes a provisioned server exists, e.g. an EC2 VM remote host, with docker and compose installed.
+- ssh and scp actions require the EC2 public ip, username and the ssh-key, in Github Secrets.
+- A simple docker-compose file to launch the image in the remote host.
+- Steps:
+    1. checkout repo in actions VM
+    2. login to docker in actions VM
+    3. extract metadata for image
+    4. build and push image
+    5. copy compose file to remote host with `scp-action`
+    6. execute commands on host with `ssh-action`
+        - docker login
+        - compose pull & up
+        - docker logout
+        - image prune
+
+## Workflow:
+- publish-docker-test-ssh-actions.yml
+
+## Actions used:
+- actions/checkout@v3
+- docker/login-action
+- docker/metadata-action
+- docker/build-push-action
+- [SSH Action](https://github.com/appleboy/ssh-action)
+- [SCP Action](https://github.com/appleboy/scp-action)
+
