@@ -6,7 +6,7 @@ name: Publish Docker image - private repo
 
 on:
   push:
-    branches: [test-ssh-remote]
+    branches: [demo/v3]
 
 jobs:
   push_to_registry:
