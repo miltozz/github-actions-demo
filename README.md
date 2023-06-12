@@ -2,7 +2,7 @@
 
 # Test Github Actions
 
-## Branch: test-ssh-remote
+## Branch: demo/v3
 - Add Github Actions CI workflow to check remote ssh actions
 - Assumes a provisioned server exists, e.g. an EC2 VM remote host, with docker and compose installed.
 - ssh and scp actions require the EC2 public ip, username and the ssh-key, in Github Secrets.
