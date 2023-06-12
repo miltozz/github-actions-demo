@@ -1,0 +1,23 @@
+{
+  "name": "calculator-actions",
+  "version": "1.0.0",
+  "description": "a simple calculator",
+  "main": "calc.js",
+  "scripts": {
+    "start": "node calc.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thelongestyard/actions-play.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thelongestyard/calculator/issues"
+  },
+  "homepage": "https://github.com/thelongestyard/actions-play#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
